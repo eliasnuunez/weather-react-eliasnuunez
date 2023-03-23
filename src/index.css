@@ -1,0 +1,103 @@
+:root {
+  --section-overlay: rgba(0, 0, 0, 0.7);
+  --background-overlay: rgba(0, 0, 0, 0.2)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{background-color: #000000;}
+
+.app {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-overlay);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Top  */
+
+.section {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: #1c1e21;
+  background: #E6FFDA;
+}
+
+.section__inputs, .section__temperature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--section-overlay);
+  background: #E6FFDA;
+  margin-bottom: 3rem;
+}
+
+.section__inputs>input {
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: 200;
+  color: #1c1e21;
+}
+
+.section__inputs>input:focus {
+  outline: none;
+}
+
+.section__inputs>button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 00.4rem;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: white;
+}
+
+.section__inputs>button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon>h3 {
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.temperature>h1 {
+  font-size: 60px;
+}
